@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carrie's form field code snippets file</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <h1>Code snippets for the form fields on page 2</h1>
+        <br>
+        <form action="thankyou.html" class="needs-validation" novalidate>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+    <!-- passenger 1-->
+                <i class="material-icons">&#xe7fd;</i><span class="input-group-text">Adult Passenger 1</span> 
+              </div>
+                <input type="text" class="form-control" id="p1fname" name="p1fname" placeholder="First Name" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                <input type="text" class="form-control" name="p1lname" placeholder="Last Name" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+
+                <!-- gender for passenger 1-->
+                <input type="radio" class="form-control" name="gender1" value="male" required>
+                  <label for="male">Male</label>
+                <input type="radio" class="form-control" name="gender1" value="female" required>
+                  <label for="female">Female</label>
+                <input type="radio" class="form-control" name="gender1" value="other" required>
+                  <label for="other">Other</label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+
+                  <!-- age for passenger 1-->
+                  <label for="p1age">Age:</label>
+                    <input type="number" class="form-control" name="p1age" placeholder="Age" required min="13">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div> 
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+<!-- passenger 2-->
+                <div class="input-group-prepend">
+                    <i class="material-icons">&#xe7fd;</i><span class="input-group-text">Adult Passenger 2</span>
+                </div>
+                  <input type="text" class="form-control" placeholder="First Name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  <input type="text" class="form-control" placeholder="Last Name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+
+                    <!-- gender for passenger 2-->
+                <input type="radio" class="form-control" name="gender2" value="male" required>
+                  <label for="male">Male</label>
+                <input type="radio" class="form-control" name="gender2" value="female" required>
+                  <label for="female">Female</label>
+                <input type="radio" class="form-control" name="gender2" value="other" required>
+                  <label for="other">Other</label>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                  
+                   <!-- age for passenger 2-->
+                   <label for="p2age">Age:</label>
+                   <input type="number" class="form-control" name="p2age" placeholder="Age" required min="13">
+                   <div class="valid-feedback">Valid.</div>
+                   <div class="invalid-feedback">Please fill out this field.</div> 
+
+<!-- child-->
+                  <div class="input-group-prepend">
+                    <i class="material-icons">&#xeb41;</i><span class="input-group-text">Child</span>
+                </div>
+                  <input type="text" class="form-control" placeholder="First Name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                  <input type="text" class="form-control" placeholder="Last Name" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+
+                    <!-- gender for child-->
+                <input type="radio" class="form-control" name="genderchild" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" class="form-control" name="genderchild" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" class="form-control" name="genderchild" value="other" required>
+                <label for="other">Other</label>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+
+    <!-- age for child-->
+                  <label for="childage">Age:</label>
+                    <input type="number" class="form-control" name="childage" placeholder="Child Age" required min="0" max="12">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+    <!-- address-->
+                <label for="address"><i class="material-icons">&#xe563;</i>Address:</label>
+                <textarea class="form-control" rows="2" id="address" name ="address"></textarea>
+                    <!-- not a mandatory field <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div> -->
+
+                     <!-- email-->
+                    <label for="email"> <i class="material-icons">&#xe554;</i>Email: </label>
+                    <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+
+                     <!-- phone-->
+                     <label for="phone"> <i class="material-icons">&#xe324;</i>Mobile: </label>
+                     <input type="phone" id="phone" class="form-control"  pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" size="30" required>
+                     <div class="valid-feedback">Valid.</div>
+                     <div class="invalid-feedback">Please fill out this field.</div>
+                    
+            </div>
+                
+            <button type="submit" class="btn btn-primary" >Submit</button>
+          </form>
+
+          <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+        
+<hr>
+<br>
+        <h2>Some extra Google icons we could use</h2>
+        <p>Email: <i class="material-icons">&#xe554;</i> </p>
+        <p>Mobile phone: <i class="material-icons">&#xe324;</i> </p>
+        <p>Cutlery (for food type): <i class="material-icons">&#xe561;</i> </p>
+        <p>Cloche (for food type): <i class="material-icons">&#xeb49;</i> </p>
+        <p><i class="material-icons">room_service</i>
+            <i class="material-icons" style="font-size:36px">room_service</i>
+            <i class="material-icons" style="font-size:48px;color:red">room_service</i></p>
+        <p>Plane/flight: <i class="material-icons">&#xe53d;</i> </p>
+        <p>Building (for address): <i class="material-icons">&#xe563;</i></p>
+        <p>Credit Card: <i class="material-icons">&#xe8a1;</i>
+        </p>
+    </body>
+    </html>
