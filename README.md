@@ -7,3 +7,14 @@ Friday 8 April 2022
 3.10 pm The process started with creating the HTML structure for the index.html page. We started with the form elements and we researched on the syntax and the required attributes. 
 4.00 pm Decided to add footer with images to index.html
 4.45 pm First stage concluded. Completed structure of index.html. 
+Sunday 10 April 2022
+Team members committed work in progress and research to repo on Github as pull requests.
+All four team members met via Zoom to discuss work in progress.
+Durga and Archana showed us their working websites/apps which both have multiple pages with extensive styling applied.  
+Currenlty there is no form validation.
+The team decided to use Durga's version but with Archana's form page.  
+Archana, Durga and Carrie have incorporated Bootstrap 4.
+Carrie showed how to incorporate Bootstrap form validation.
+The team plans to merge the code tomorrow (11th April) and work further on form field validation together.
+Presentation deck will be done mainly by Hooi and Carrie in Powerpoint.
+Durga invited all members to be collaborators on Github so that we don't have to make pull requests.
