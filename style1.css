@@ -1,0 +1,88 @@
+body{
+    background-image: url(poster.jpg);
+    background-size: cover;
+}
+#form{
+    background-color: black;
+    height:750px;
+    width:700px;
+    margin:auto;
+    padding:20px;
+    opacity: 0.7;
+}
+#form h3{
+    border-bottom: 2px solid blue;
+    width:210px;
+    padding: 5px;
+}
+::placeholder{
+    color:blue
+}
+#input #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input2 #input-group{
+    width:195px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input3 #input-group{
+    margin-left: 50px;
+}
+#input4 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input4 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input5 h3{
+    border-bottom: 2px solid blue;
+    width:220px;
+    padding: 5px;
+}
+#input6 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input6 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+} 
