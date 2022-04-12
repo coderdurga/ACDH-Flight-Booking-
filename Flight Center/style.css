@@ -5,6 +5,11 @@ body{
     
 }
 
+label {
+  font-weight: bold;
+  margin:10px
+}
+
 .heading {grid-area: FlightCenter ;}
 .grid1 {
     display: grid;
@@ -43,7 +48,10 @@ body{
   }
   
   
-.triptype {grid-area: RoundTrip;}
+.triptype {
+  grid-area: RoundTrip;
+  
+}
 .oneway {grid-area: OneWay;}
 .grid3 {
     display: grid;
@@ -78,7 +86,7 @@ body{
   }
   
   #form{
-    background-color: black;
+    background-color: white;*
     height:700px;
     width:700px;
     margin:auto;
@@ -87,7 +95,7 @@ body{
 }
 #form h3{
     border-bottom: 2px solid blue;
-    width:210px;
+    width: 400px;
     padding: 5px;
 }
 ::placeholder{
@@ -137,8 +145,7 @@ body{
     color:blue;
 }
 #input5 h3{
-    border-bottom: 2px solid blue;
-    width:220px;
+    border-bottom: 2px solid color: rgb(0, 0, 255);
     padding: 5px;
 }
 #input6 #input-group{
@@ -255,6 +262,12 @@ body{
   }
 
   .message {
-    margin: 200px 1px 2px 3px;
+    margin: 150px 20px 50px 50px;
+    font-weight: 600;
+   
+  }
+
+  .submit {
+    margin: 10px;
   }
   

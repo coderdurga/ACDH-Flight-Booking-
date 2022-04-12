@@ -20,6 +20,8 @@
 <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 ></script>
+
+
     </head>
     
     <body>
@@ -32,38 +34,75 @@
             <div class="login"><a href="index4.html">Login</a></div>
             <div class="contact"><a href="contact.html">Contact</a></div>
         </div><br>
+        <form action="index1.html" class="needs-validation" novalidate>
         <div class="grid3">
-            <div class="triptype">
-             <input type="radio" class="btn" name="check" check="checked"><span>RoundTrip</span></div>
-               <div class="oneway">
-             <input type="radio" class="btn" name="check"><span>OneWay</span></div>
+            <div class="triptype">               
+                <input type="radio" class="form-control" name="triptype" value="roundtrip" check="checked" required><span> Round Trip</span>           
+                <div class="invalid-feedback">Please choose one way or return.</div>
+            </div>
+            <div class="oneway">
+                <input type="radio" class="form-control" name="triptype" value="oneway" required><span> One Way</span>        
+            </div>
             
+        </div>
         </div><br>
         <div class="grid4">
             <center><div class="destination">
-            <img src="flightdepart.png" height="25" width="25"/>
-            
-            <input type="text" name="fly-from" placeholder="Flying from">
+            <img src="flightdepart.png" height="25" width="25"/> <label for="fly-from"> Departure City: </label>
+            <input type="text" name="fly-from" placeholder="Flying from" required>
+            <div class="invalid-feedback">Please enter your departure city.</div>
         </div></center>
+                
         </div>
         <center> <div class="grid5">
           <div class="source">
              <img src="flightarr.png" height="30" width="30"/>
-            <input type="text" name="fly-to" placeholder="Flying to">
+             <label for="fly-to"> Destination City: </label>            
+             <input type="text" name="fly-to" placeholder="Flying to" required>
+           <div class="invalid-feedback">Please enter your destination city.</div> 
         </div> 
         </div></center>
     
-       <center><label for="depart">Departure Date</label><div class="departure"><input type="date" name="departure-date" placeholder="Departuredate"></div></center>
-              
-       <center><label for="return">Return Date</label><div class="return"><input type="date" name="return-date" placeholder="Returndate"></div></center><br>
-       <center><div class="Noofpassengers"><img src="passenger.png" height="40" width="40"/><input type="text" name="No-of-passengers" placeholder="Number Of Passengers"></div></center>
+       <center><label for="depart">Departure Date:</label>
+        <input type="date" name="depart" required>
+        <div class="invalid-feedback">Please enter your departure date.</div>
+    </center>
+       
+       <center><label for="return">Return Date:</label>
+        <input type="date" name="return-date"></center>
+       
+
+       <center><div class="Noofpassengers">
+           <img src="passenger.png" height="40" width="40"/>
+           <label for="No-of-passengers">No. of passengers:</label>
+           <input type="number" name="No-of-passengers" min="0"></div></center>
 
        <center><div class="submit">
-           <a href='http://127.0.0.1:5500/index1.html'>
-           <img src="searchicon.webp" height="50" width="50"/>
-           </a>
-        </div></center><br>
+           
+           <button type="submit"  ><img src="searchicon.webp" height="50" width="50"/></button>
+        </div></center>
+    </form>
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
     
-     </body>
+   
     </body>
 </html>
