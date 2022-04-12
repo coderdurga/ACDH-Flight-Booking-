@@ -1,0 +1,131 @@
+<html>
+    <head>
+      <title>Flight Booking Center</title> 
+      <link href='./style.css' rel='stylesheet'>
+      <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+>
+
+<!-- jQuery library -->
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+
+<!-- Popper JS -->
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+></script>
+
+<!-- Latest compiled JavaScript -->
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+></script>
+
+
+    </head>
+    
+    <body>
+        <div class="grid1">
+            <div class="heading">Flight Corner</div>
+        </div><br>
+        <div class="grid2">
+            <div class="home"><a href="index.html">Home</a></div>
+            <div class="gallery"><a href="gallery.html">Travel Deals</a></div>
+            <div class="login"><a href="login.html">Login</a></div>
+            <div class="contact"><a href="contact.html">Contact</a></div>
+        </div><br>
+        <form action="booking.html" class="needs-validation" novalidate>
+        <div class="grid3">
+            <div class="triptype">               
+                <input type="radio" class="form-control" name="triptype" value="roundtrip" check="checked" required><span> Round Trip</span>           
+                <div class="invalid-feedback">Please choose one way or return.</div>
+            </div>
+            <div class="oneway">
+                <input type="radio" class="form-control" name="triptype" value="oneway" required><span> One Way</span>        
+            </div>
+            
+        </div>
+        </div><br>
+        <div class="grid4">
+            <center><div class="destination">
+            <img src="images/flightdepart.png" height="25" width="25"/> <label for="fly-from"> Departure City: </label>
+            <input type="text" name="fly-from minlength="4" maxlength="8" size="10" placeholder="Flying from" required>
+            <div class="invalid-feedback">Departure city (minimum 4, maximum 8 characters.)</div>
+        </div></center>
+                
+        </div>
+        <center> <div class="grid5">
+          <div class="source">
+             <img src="images/flightarr.png" height="30" width="30"/>
+             <label for="fly-to"> Destination City: </label>            
+             <input type="text" minlength="4" maxlength="8" size="10" name="fly-to" placeholder="Flying to" required>
+           <div class="invalid-feedback">Destination city (minimum 4, maximum 8 characters.)</div> 
+        </div> 
+        </div></center>
+    
+       <center><label for="depart">Departure Date:</label>
+        <input type="date" name="depart" id="depart" min="2022-04-13" max="2027-12-31" required>
+        <div class="invalid-feedback">Please enter your departure date.</div>
+    </center>
+       
+       <center><label for="return">Return Date:</label>
+        <input type="date" name="return" id="return" min="2022-04-14" max="2027-12-31" required></center>
+        <div class="invalid-feedback">Please enter your return date.</div>
+
+       <center><div class="noOfPassengers">
+           <img src="images/passenger.png" height="40" width="40"/>
+           <label for="no-of-passengers">No. of passengers:</label>
+           <div class="invalid-feedback">Please enter your departure date.</div>
+           <input type="number" name="no-of-passengers" min="1" required></div></center>
+
+       <center><div class="submit">
+           
+           <button type="submit"  ><img src="images/searchicon.webp" height="50" width="50"/></button>
+        </div></center>
+    </form>
+    <footer> 
+      <section class="copyright">
+      <p>&copy; 2022 by Flight Corner</p>
+       </section>
+      <section class="address">
+          <p>Address:<br>
+            Westfield Parramatta, Shop 3079, <br>
+            Level 3/175 Church St, <br>
+            Parramatta NSW 2150 </p>
+          
+          <p><a id="mailto" href="mailto:info@flightcorner.com.au">info@flightcorner.com.au</a></p>
+      </section>
+      <section class="smedia"> 
+        
+        <a href="https://www.facebook.com/"> <img src="images/facebook_small.png" alt="facebook"></a>
+        <a href="https://instagram.com/"> <img src="images/instagram_small.png" alt="instagram"></a>
+        <a href="https://twitter.com/"> <img src="images/twitter_small.png" alt="twitter"></a>
+        <a href="https://youtube.com/"> <img src="images/youtube-variation_small.png" alt="youtube"></a>
+        <a href="https://www.paypal.com/"> <img src="images/paypal_small.png" alt="paypal"></a>
+        
+      </section>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+   
+    </body>
+</html>
