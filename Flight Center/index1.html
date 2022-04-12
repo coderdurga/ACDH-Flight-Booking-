@@ -63,19 +63,20 @@
 <!--<label for="numadults" id="input-group">Number of Adults:</label>-->
               <div id="input2"><!--input2-->
                   <input type="number" name="numadults" id="input-group" placeholder="No. of Adults" min="0">
-                  <input type="number" id="input-group" placeholder="Children(2-11years)" min="0">
-                 <input type="number" name="infant" id="input-group" placeholder="Infants(under 2years)" min="0">
+                  <input type="number" id="input-group" placeholder="Children (2-11 years)" min="0">
+                 <input type="number" name="infant" id="input-group" placeholder="Infants (under 2 years)" min="0">
               </div><!--input2-->
 
               <br>
               <div id="input6"><!--input6-->
                 <label for="fanme" id="input-group">Main Passenger First Name:</label>
                 <input type="text" name="fname" id="input-group" required>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="invalid-feedback">Please enter your first name.</div>
 
                 <label for="lanme" id="input-group">Main Passenger Second Name:</label>
                 <input type="text" name="lname" id="input-group" required>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                    <div class="invalid-feedback">Please enter your second name.</div>
+                  <br>
                   <br>
                   <div id="input3"><!--input3-->
                     <label for="r" style="bold" >Gender:</label> 
@@ -86,15 +87,18 @@
                     <input type="radio" name="r" >
                     <label for="r">Other</label>
                 </div><!--input3-->
-
+<br>
                 <label for="p1age">Age:</label>
                     <input type="number" name="p1age" required min="18">
                     <div class="invalid-feedback">Please enter your age. You must be over 18 to make a booking.</div> 
+                    <br>
+                    <br>
 
         <!-- address-->
                 <div>
                     <label for="address"><i class="material-icons">&#xe563;</i>Full Home Address:</label>
-                    <textarea class="form-control" rows="2" id="address" name ="address"></textarea>
+                    <textarea class="form-control" rows="2" id="address" name ="address" required></textarea>
+                    <div class="invalid-feedback">Please enter your full address.</div> 
                 </div>
                 <!-- 
                     Country. took this out because not part of the brief and it was not looking good
