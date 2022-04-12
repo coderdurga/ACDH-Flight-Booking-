@@ -1,0 +1,302 @@
+body{
+    background-image: url('images/flightback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+label {
+  font-weight: bold;
+  margin:10px
+}
+
+.heading {grid-area: FlightCenter ;}
+.grid1 {
+    display: grid;
+    grid-template-areas:
+      'FlightCenter';
+    gap: 3px;
+    
+    padding: 6px;
+  }
+  .grid1 > div {
+    
+    text-align: center;
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: brown;
+  }
+.home {grid-area: Home;}
+.gallery {grid-area: TravelDeals;}
+.login {grid-area: Login;}
+.contact {grid-area: Contact;}
+  .grid2 {
+    display: grid;
+    grid-template-areas:
+      'Home TravelDeals Login Contact';
+    gap: 3px;
+    
+    padding: 6px;
+    
+  }
+  .grid2 > div {
+    
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  
+  
+.triptype {
+  grid-area: RoundTrip;
+  
+}
+.oneway {grid-area: OneWay;}
+.grid3 {
+    display: grid;
+    grid-template-areas: 'RoundTrip OneWay';
+    grid-gap: 4px;
+    justify-content: space-evenly;
+    padding: 6px;
+  }
+  
+.destination {grid-area: fly-from; width: 30%;}
+
+.grid4 {
+    display: grid;
+    grid-template-areas: 'fly-from';
+    grid-gap: 4px;
+    
+    padding: 6px;
+  }
+  
+  .source {grid-area: fly-to;}
+  .grid5 {
+    display: grid;
+    grid-template-areas: 'fly-to';
+    grid-gap: 4px;
+    padding: 6px;
+  }
+
+  /* styling for booking.html */
+  .page1 {
+    background-image: url('images/flightback2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  #form{
+    background-color: white;*
+    height:700px;
+    width:700px;
+    margin:auto;
+    padding:20px;
+    opacity: 0.7;
+}
+#form h3{
+    border-bottom: 2px solid blue;
+    width: 400px;
+    padding: 5px;
+}
+::placeholder{
+    color:blue
+}
+#input #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input2 #input-group{
+    width:195px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input3 #input-group{
+    margin-left: 50px;
+}
+#input4 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input4 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input5 h3{
+    border-bottom: 2px solid color: rgb(0, 0, 255);
+    padding: 5px;
+}
+#input6 #input-group{
+    width:300px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+}
+#input6 #input-group1{
+    width:615px;
+    margin:5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color:blue;
+} 
+  /* Styling for index2.html */
+ .thanks {
+  background-image: url('images/thankyouimg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 100px 1px 2px 3px;
+  font-size: 30px;
+  color: brown;
+  } 
+
+  .home {grid-area: Home;}
+.gallery {grid-area: TravelDeals;}
+.login {grid-area: Login;}
+.contact {grid-area: Contact;}
+  .gridthanks {
+    display: grid;
+    grid-template-areas:
+      'Home TravelDeals Login Contact';
+    
+  }
+  .gridthanks > div {
+    
+    text-align: center;
+    
+    font-size: 30px;
+  }
+
+  .deals {
+    background-image: url('images/offerimg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 50px;
+    color: brown;
+    animation:blinking 1s infinite;
+    
+    }
+    @keyframes blinking{
+    0%{   color: red;   }
+    47%{   color: #000; }
+    62%{   color: transparent; }
+    97%{   color:transparent; }
+    100%{  color: #000;   }
+    }
+    /* Styling for Login Page*/
+ .home {grid-area: Home;}
+ .gallery {grid-area: TravelDeals;}
+ .login {grid-area: Login;}
+ .contact {grid-area: Contact;}
+  .gridlogin {
+    display: grid;
+    grid-template-areas:
+      'Home TravelDeals Login Contact';
+    
+  }
+  
+  .gridlogin > div {
+   
+    text-align: center;
+    
+    font-size: 30px;
+  }
+  
+    .loginpage {
+      background-image: url('images/loginbackimg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 100px 1px 2px 3px;
+      font-size: 30px;
+      color: white;
+    }
+
+ .img1 {grid-area: Image1;}
+ .img2 {grid-area: Image2;}
+ .img3 {grid-area: Image3;}
+ .img4 {grid-area: Image4;}
+  .images {
+    display: grid;
+    grid-template-areas:
+      'Image1 Image2 Image3 Image4';
+    gap: 3px;
+    justify-content: space-around;
+    padding: 6px;
+    
+  }
+  .conpage {
+    background-image: url('images/contactback.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 100px 1px 2px 3px;
+    font-size: 30px;
+    color: black;
+  }
+
+  .message {
+    margin: 150px 20px 50px 50px;
+    font-weight: 600;
+   
+  }
+
+  .submit {
+    margin: 10px;
+  }
+
+  /* booking form submit and reset buttons */
+
+  .submit-button {
+    position: relative;
+    left: 13em;
+    top: 0.5em;
+  }
+  
+  .reset-button {
+    position: relative;
+    left: 13em;
+    top: 0.5em;
+  }
+
+  footer {
+	
+    display: block;
+    border: 0.5px solid grey;
+    background-color:rgb(252, 252, 153);
+    
+  }
+  footer section {
+  display: inline-block;
+  padding-left: 5em;
+  width: 33%;
+  height: 10%;
+  
+    }
