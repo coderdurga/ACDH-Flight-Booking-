@@ -21,3 +21,4 @@ Durga invited all members to be collaborators on Github so that we don't have to
 Monday 11 April 2022
 Hooi Ming work on the All Countries API for the 'Flying from' and 'Flying to' datalist and PPT with Carrie.
 Durga and Archana complete the HTML, CSS and JS code for the project.
+Carrie work on the form validation for index.html and passenger details page.
