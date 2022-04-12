@@ -7,7 +7,7 @@ body{
 
 label {
   font-weight: bold;
-  margin:10px
+  margin:20pxpx
 }
 
 .heading {grid-area: FlightCenter ;}
@@ -109,7 +109,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 }
 #input2 #input-group{
     width:195px;
@@ -119,7 +119,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 }
 #input3 #input-group{
     margin-left: 50px;
@@ -132,7 +132,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 }
 #input4 #input-group1{
     width:615px;
@@ -142,7 +142,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 }
 #input5 h3{
     border-bottom: 2px solid color: rgb(0, 0, 255);
@@ -156,7 +156,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 }
 #input6 #input-group1{
     width:615px;
@@ -166,7 +166,7 @@ label {
     border-right: none;
     outline: none;
     background: transparent;
-    color:blue;
+    color:black;
 } 
   /* Styling for index2.html */
  .thanks {
@@ -271,3 +271,6 @@ label {
     margin: 10px;
   }
   
+  radio {
+    font-weight: normal;
+  }
