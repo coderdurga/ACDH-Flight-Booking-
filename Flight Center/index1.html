@@ -35,80 +35,90 @@
 
   <div class="container"><!--container-->
     <form action="index2.html" class="needs-validation" novalidate> 
-     <!-- <form class="form-group"><!--form-->-->
+     <!-- <form class="form-group">-->
           <h1 class="text-center">Airline Booking Form</h1>
 
           <div id="form"><!--form-->
-              <h3>Booking Details</h3>
-
+             
           <div id="input"><!--input-->
-
-            <label for="airline" id="input-group">Preferred Airline
-              <select name="airline" id="input-group"> 
+            <br>
+            <label for="airline" id="input-group"><i class="material-icons">&#xe53d;</i>Preferred Airline:</label>
+              <select name="airline" id="input-group" selected="" value="Default"> 
                   <option value="">IndoGo</option>
                   <option value="">AirIndia</option>
                   <option value="">SpaceJet</option>
               </select>
-            </label>
-
-            <label for="seatclass" id="input-group">Preferred Seating
-              <select name="seatclass" id="input-group">
+            
+            <br>
+            <label for="seatclass" id="input-group"><i class="material-icons">&#xe637;</i>Preferred Seating:</label>
+              <select name="seatclass" id="input-group" selected="" value="Default">
                   <option value="">Economy Class</option>
                   <option value="">Business Class</option>
                   <option value="">First Class</option>
               </select>
-              </label>
-              </div><!--input-->
-<br>
-<label for="numadults" id="input-group">Number of Adults</label>
+              
+              </div>
+              <br>
+
+<!--<label for="numadults" id="input-group">Number of Adults:</label>-->
               <div id="input2"><!--input2-->
                   <input type="number" name="numadults" id="input-group" placeholder="No. of Adults" min="0">
                   <input type="number" id="input-group" placeholder="Children(2-11years)" min="0">
-                  <input type="number" id="input-group" placeholder="Infants(under 2years)" min="0">
+                 <input type="number" name="infant" id="input-group" placeholder="Infants(under 2years)" min="0">
               </div><!--input2-->
 
-              
-
-              <div id="input4"><!--input4-->
-                  
-              </div><!--input4-->
-
-              <div id="input5"><!--input5-->
-                  <h3>Main Passenger Details</h3>
-              </div><!--input5-->
-
+              <br>
               <div id="input6"><!--input6-->
-                  <input type="text" id="input-group" placeholder="First Name" required>
+                <label for="fanme" id="input-group">Main Passenger First Name:</label>
+                <input type="text" name="fname" id="input-group" required>
                     <div class="invalid-feedback">Please fill out this field.</div>
-                  <input type="text" id="input-group" placeholder="Second Name" required>
+
+                <label for="lanme" id="input-group">Main Passenger Second Name:</label>
+                <input type="text" name="lname" id="input-group" required>
                     <div class="invalid-feedback">Please fill out this field.</div>
-                  
+                  <br>
                   <div id="input3"><!--input3-->
-                    <label for="r" >Gender:</label> 
-                    <input type="radio" name="r">
-                    <label for="input-group">Male</label>
-                    <input type="radio"  name="r">
-                    <label for="input-group">Female</label>
-                    <input type="radio" name="r">
-                    <label for="input-group">Other</label>
+                    <label for="r" style="bold" >Gender:</label> 
+                    <input type="radio" name="r" >
+                    <label for="r">Male</label>
+                    <input type="radio"  name="r" >
+                    <label for="r">Female</label>
+                    <input type="radio" name="r" >
+                    <label for="r">Other</label>
                 </div><!--input3-->
 
                 <label for="p1age">Age:</label>
                     <input type="number" name="p1age" required min="18">
-                    <div class="invalid-feedback">Please fill out this field.</div> 
+                    <div class="invalid-feedback">Please enter your age. You must be over 18 to make a booking.</div> 
 
+        <!-- address-->
+                <div>
+                    <label for="address"><i class="material-icons">&#xe563;</i>Full Home Address:</label>
+                    <textarea class="form-control" rows="2" id="address" name ="address"></textarea>
+                </div>
+                <!-- 
+                    Country. took this out because not part of the brief and it was not looking good
+                    <select name="country">
+                        <option selected="" value="Default">(Please select a country)</option>
+                        <option value="AF">Australia</option>
+                        <option value="AL">Canada</option>
+                        <option value="DZ">India</option>
+                        <option value="AS">Russia</option>
+                        <option value="AD">USA</option></select>
+                        <br> -->
                     <!-- phone-->
-                    <div>
-                <label for="phone"> <i class="material-icons">&#xe324;</i>Mobile: </label>
-                <input type="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" size="30" required>
-                <div class="invalid-feedback">Please fill out this field.</div>
-            </div>
+                <div>
+                    <label for="phone"> <i class="material-icons">&#xe324;</i>Mobile phone: </label>
+                    <input type="phone" class="form-control" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" size="30" required>
+                    <div class="invalid-feedback">Please enter your mobile number.</div>
+                </div>
+
                 <!-- email-->
                     <label for="email"> <i class="material-icons">&#xe554;</i>Email: </label>
                     <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <div class="invalid-feedback">Please enter your email address.</div>
                 
-                <label for="foodpref">Food Preferences</label>
+                <label for="foodpref"><i class="material-icons">&#xe561;</i>Food Preferences</label>
                 <select name="foodpref">
                   <option selected="" value="Default">Options:</option>
                   <option value="AF">Vegetarian</option>
@@ -119,22 +129,9 @@
                   </select><br>
 
 
-                <!-- address-->
-                <div>
-                <label for="address"><i class="material-icons">&#xe563;</i>Address:</label>
-                <textarea class="form-control" rows="2" id="address" name ="address"></textarea>
-                </div>
-                <!-- Country-->
-                  <select name="country">
-                      <option selected="" value="Default">(Please select a country)</option>
-                      <option value="AF">Australia</option>
-                      <option value="AL">Canada</option>
-                      <option value="DZ">India</option>
-                      <option value="AS">Russia</option>
-                      <option value="AD">USA</option></select>
-                      <br>
+                
                        <!-- payment type is compulsory-->
-                      <label for="m_payment">Payment Option:</label> 
+                      <label for="m_payment"><i class="material-icons">&#xe8a1;</i>Payment Option:</label> 
                       <select id="m_payment" name="payment" required>
                           <option value="creditcard">Credit Card</option>
                           <option value="mastercard">Master Card</option>
