@@ -18,3 +18,6 @@ Carrie showed how to incorporate Bootstrap form validation.
 The team plans to merge the code tomorrow (11th April) and work further on form field validation together.
 Presentation deck will be done mainly by Hooi and Carrie in Powerpoint.
 Durga invited all members to be collaborators on Github so that we don't have to make pull requests.
+Monday 11 April 2022
+Hooi Ming work on the All Countries API for the 'Flying from' and 'Flying to' datalist and PPT with Carrie.
+Durga and Archana complete the HTML, CSS and JS code for the project.
