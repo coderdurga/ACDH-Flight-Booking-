@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <title>Passenger Details</title>  
+        <link href='./style.css' rel='stylesheet'>
+        <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+>
+
+<!-- jQuery library -->
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+
+<!-- Popper JS -->
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+></script>
+
+<!-- Latest compiled JavaScript -->
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+    </head>
+ <body class="page1">
+  <div class="grid2">
+    <div class="home"><a href="index.html">Home</a></div>
+    <div class="gallery"><a href="gallery.html">Travel Deals</a></div>
+    <div class="login"><a href="login.html">Login</a></div>
+    <div class="contact"><a href="contact.html">Contact</a></div>
+</div>
+    
+
+  <div class="container"><!--container-->
+    <form action="thankyou.html" class="needs-validation" novalidate> 
+     <!-- <form class="form-group">-->
+          <h1 class="text-center">Airline Booking Form</h1>
+
+          <div id="form"><!--form-->
+              <h3>Booking Details</h3>
+
+          <div id="input"><!--input-->
+
+            <label for="airline" id="input-group">Preferred Airline
+              <select name="airline" id="input-group"> 
+                  <option value="">IndoGo</option>
+                  <option value="">AirIndia</option>
+                  <option value="">SpaceJet</option>
+              </select>
+            </label>
+
+            <label for="seatclass" id="input-group">Preferred Seating
+              <select name="seatclass" id="input-group">
+                  <option value="">Economy Class</option>
+                  <option value="">Business Class</option>
+                  <option value="">First Class</option>
+              </select>
+              </label>
+              </div><!--input-->
+<br>
+<label for="numadults" id="input-group">Number of Passengers</label>
+              <div id="input2"><!--input2-->
+                  <input type="number" name="numadults" id="input-group" placeholder="No. of Adults" min="1">
+                  <input type="number" id="input-group" placeholder="Children(2-11years)" min="0">
+                  <input type="number" id="input-group" placeholder="Infants(under 2years)" min="0">
+              </div><!--input2-->
+<br>
+              <div id="input4"><!--input4-->
+                  
+              </div><!--input4-->
+
+              <div id="input5"><!--input5-->
+                  <h3>Main Passenger Details</h3>
+              </div><!--input5-->
+
+              <div id="input6"><!--input6-->
+                  <input type="text" id="input-group" placeholder="First Name" pattern=[a-zA-z]{5,} required>
+                    <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+                  <input type="text" id="input-group" placeholder="Last Name" pattern=[a-zA-z]{5,} required>
+                    <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+              </div>    
+                  <div id="input3"><!--input3-->
+                    <label for="r" >Gender:</label> 
+                    <input type="radio" name="r">
+                    <label for="input-group">Male</label>
+                    <input type="radio"  name="r">
+                    <label for="input-group">Female</label>
+                    <input type="radio" name="r">
+                    <label for="input-group">Other</label>
+                </div><!--input3-->
+
+                <label for="p1-age">Age:</label>
+                    <input type="number" name="p1-age" required min="18">
+                    <div class="invalid-feedback">Please fill out this field.</div> 
+
+                    <!-- phone-->
+                    <div>
+                <label for="phone"> <i class="material-icons">&#xe324;</i>Mobile: </label>
+                <input type="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="04xx-xxx-xxx" size="30" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+<br>            
+                <!-- email-->
+                    <label for="email"> <i class="material-icons">&#xe554;</i>Email: </label>
+                    <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required>
+                        <div class="invalid-feedback">Please use a valid email.</div>
+<br>
+                <label for="foodpref">Food Preferences</label>
+                <select name="foodpref">
+                  <option selected="" value="Default">Options:</option>
+                  <option value="AF">Vegetarian</option>
+                  <option value="AL"><Non-Vegetarian>Non-Vegetarian</option>
+                  <option value="DZ"><Jain-Meal>Jain-Meal</option>
+                <option value="KO"><Kosher-Meal>Kosher-Meal</option>
+                <option value="HL"><Halal-Meal>Halal-Meal</option>
+                  </select>
+<br>
+<br>                
+                  <!-- Details for Adult Passenger 2 -->
+
+                  <div id="input7"><!--input7-->
+                    <h3>Second Passenger Details</h3>
+                </div>
+                
+                <div id="input8"><!--input8-->
+                    <input type="text" id="input-group" placeholder="First Name" required pattern=[a-zA-z]{5,} required>
+                      <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+                    <input type="text" id="input-group" placeholder="Last Name" required pattern=[a-zA-z]{5,} required>
+                      <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+                </div>    
+                    <div id="input9"><!--input9-->
+                      <label for="r" >Gender:</label> 
+                      <input type="radio" name="r">
+                      <label for="input-group">Male</label>
+                      <input type="radio"  name="r">
+                      <label for="input-group">Female</label>
+                      <input type="radio" name="r">
+                      <label for="input-group">Other</label>
+                  </div><!--input3-->
+  
+                  <label for="p2-age">Age:</label>
+                      <input type="number" name="p2-age" required min="18">
+                      <div class="invalid-feedback">Please fill out this field.</div> 
+  
+                      <!-- phone-->
+                      <div>
+                  <label for="phone"> <i class="material-icons">&#xe324;</i>Mobile: </label>
+                  <input type="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="04xx-xxx-xxx" size="30" required>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+<br>              
+                  <!-- email-->
+                      <label for="email"> <i class="material-icons">&#xe554;</i>Email: </label>
+                      <input type="email" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required>
+                          <div class="invalid-feedback">Please use a valid email.</div>
+<br>                  
+                  <label for="foodpref">Food Preferences</label>
+                  <select name="foodpref">
+                    <option selected="" value="Default">Options:</option>
+                    <option value="AF">Vegetarian</option>
+                    <option value="AL"><Non-Vegetarian>Non-Vegetarian</option>
+                    <option value="DZ"><Jain-Meal>Jain-Meal</option>
+                  <option value="KO"><Kosher-Meal>Kosher-Meal</option>
+                  <option value="HL"><Halal-Meal>Halal-Meal</option>
+                    </select>
+<br>
+<br>                 
+<!-- Details for child passenger -->
+
+            <div id="input10"><!--input10-->
+              <h3>Child Passenger Details</h3>
+            </div>
+            <div id="input11"><!--input11-->
+              <input type="text" id="input-group" placeholder="First Name" pattern=[a-zA-z]{5,} required>
+              <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+              <input type="text" id="input-group" placeholder="Last Name" pattern=[a-zA-z]{5,} required>
+              <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+            </div> 
+            <div id="input12"><!--input12-->
+              <label for="r" >Gender:</label> 
+              <input type="radio" name="r">
+              <label for="input-group">Male</label>
+              <input type="radio"  name="r">
+              <label for="input-group">Female</label>
+              <input type="radio" name="r">
+              <label for="input-group">Other</label>
+            </div>
+
+            <label for="child-age">Age:</label>
+            <input type="number" name="child-age" required min="2" max="11">
+            <div class="invalid-feedback">Please fill out this field.</div>
+            
+            <label for="child-meal">Child's Meal</label>
+                <select name="child-meal">
+                  <option selected="" value="Default">Options:</option>
+                  <option value="AF">Vegetarian</option>
+                  <option value="AL"><Non-Vegetarian>Non-Vegetarian</option>
+                  <option value="DZ"><Jain-Meal>Jain-Meal</option>
+                <option value="KO"><Kosher-Meal>Kosher-Meal</option>
+                <option value="HL"><Halal-Meal>Halal-Meal</option>
+                  </select>
+<br>
+<br>
+<!-- Details for infant passenger -->
+
+<div id="input12"><!--input12-->
+  <h3>Infant Passenger Details</h3>
+</div>
+<div id="input13"><!--input13-->
+  <input type="text" id="input-group" placeholder="First Name" pattern=[a-zA-z]{5,} required>
+  <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+  <input type="text" id="input-group" placeholder="Last Name" pattern=[a-zA-z]{5,} required>
+  <div class="invalid-feedback">Please fill out name with 5 or more characters.</div>
+</div> 
+<div id="input14"><!--input14-->
+  <label for="r" >Gender:</label> 
+  <input type="radio" name="r">
+  <label for="input-group">Male</label>
+  <input type="radio"  name="r">
+  <label for="input-group">Female</label>
+  <input type="radio" name="r">
+  <label for="input-group">Other</label>
+</div>
+
+<label for="child-age">Age:</label>
+<input type="number" name="child-age" required min="0" max="2">
+<div class="invalid-feedback">Please fill out this field.</div>
+
+<label for="child-meal">Infant's Meal</label>
+    <select name="child-meal">
+      <option selected="" value="Default">Options:</option>
+      <option value="carrot-puree">Carrot Puree</option>
+      <option value="potato-puree">Potato Puree</option>
+      <option value="strawberry-puree">Strawberry Puree</option>
+      <option value="pear-puree">Pear Puree</option>
+      <option value="apple-puree">Apple Puree</option>
+    </select>
+<br>
+                <!-- address-->
+                <div>
+                <label for="address"><i class="material-icons">&#xe563;</i>Address:</label>
+                <textarea class="form-control" rows="2" id="address" name ="address" required></textarea>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <!-- Country-->
+                  <select name="country">
+                      <option selected="" value="Default">(Please select a country)</option>
+                      <option value="AF">Australia</option>
+                      <option value="AL">Canada</option>
+                      <option value="DZ">India</option>
+                      <option value="AS">Russia</option>
+                      <option value="AD">USA</option></select>
+                      <br>
+                       <!-- payment type is compulsory-->
+                      <label for="m_payment">Payment Option:</label> 
+                      <select id="m_payment" name="payment" required>
+                          <option value="creditcard">Credit Card</option>
+                          <option value="mastercard">Master Card</option>
+                          <option value="visacard">visa Card</option>
+                      </select> 
+                      <div class="invalid-feedback">Please select payment option.</div>
+                      <br><br>
+
+              </div><!--input6-->
+              <button type="submit" class="btn btn-primary submit-button">Submit Form</button>
+              <button type="reset" class="btn btn-primary reset-button">Clear Form</button>
+          </div><!--form-->
+
+     </form>
+     <footer> 
+      <section class="copyright">
+      <p>&copy; 2022 by Flight Corner</p>
+       </section>
+      <section class="address">
+          <p>Address:<br>
+            Westfield Parramatta, Shop 3079, <br>
+            Level 3/175 Church St, <br>
+            Parramatta NSW 2150 </p>
+          
+          <p><a id="mailto" href="mailto:info@flightcorner.com.au">info@flightcorner.com.au</a></p>
+      </section>
+      <section class="smedia"> 
+        
+        <a href="https://www.facebook.com/"> <img src="images/facebook_small.png" alt="facebook"></a>
+        <a href="https://instagram.com/"> <img src="images/instagram_small.png" alt="instagram"></a>
+        <a href="https://twitter.com/"> <img src="images/twitter_small.png" alt="twitter"></a>
+        <a href="https://youtube.com/"> <img src="images/youtube-variation_small.png" alt="youtube"></a>
+        <a href="https://www.paypal.com/"> <img src="images/paypal_small.png" alt="paypal"></a>
+        
+      </section>
+    </footer>
+    </div><!--container- that the form is in-->
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+    </body>
+</html>

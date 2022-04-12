@@ -30,24 +30,21 @@
             </a>
         </div>
         <div class="item form-container">
-            <form>
+            <form action="booking.html" class="needs-validation" novalidate>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="customRadio" id="customRadio1" value="option1" />
-                    <label class="form-check-label" for="customRadio1">Round-trip</label>
+                    <input class="form-check-input form-control" type="radio" name="triptype" id="triptype" value="roundtrip" check="checked" required/>
+                    <label class="form-check-label" for="triptype">Round-trip</label>
+                    <div class="invalid-feedback">Please choose one way or return.</div>
                   </div>
                   
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="customRadio" id="customRadio2" value="option2" />
-                    <label class="form-check-label" for="customRadio2">One-way</label>
+                    <input class="form-check-input form-control" type="radio" name="triptype" id="triptype" value="oneway" />
+                    <label class="form-check-label" for="triptype">One-way</label>
                   </div>
                   <br>
                   <br>
                   <div class="location">
                       <img class="img-inline" src="images/airplane-take-off.png" alt="Airplane take-off icon">
-                      <input class="form-control" list="datalistOptions" id="country-from" name="country-from" placeholder="Flying from...">
-                      <datalist id="datalistOptions">
-
-                      </datalist>
                   </div>
                   <div class="location">
                     <img class="img-inline" src="images/airplane-landing.png" alt="Airplane landing icon">
