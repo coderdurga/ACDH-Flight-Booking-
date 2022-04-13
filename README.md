@@ -22,3 +22,7 @@ Monday 11 April 2022
 Hooi Ming work on the All Countries API for the 'Flying from' and 'Flying to' datalist and PPT with Carrie.
 Durga and Archana complete the HTML, CSS and JS code for the project.
 Carrie work on the form validation for index.html and passenger details page.
+Tuesday 12 April 2022
+Durga and Archana work on Powerpoint slides for their wireframe implementation
+Hooi tried to integrate the countries API code as a datalist into the first page (index.html) but it didn't work. Hooi work on putting patterns and attributes into the required form inputs.
+Carrie continue to work on the first and second form validation using Bootstrap.
